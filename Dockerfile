@@ -10,3 +10,7 @@ RUN chmod 755 /usr/sbin/install-rbenv.sh
 RUN adduser --disabled-password --gecos "Rails" rails
 
 RUN install-rbenv.sh
+
+USER rails
+ENV HOME /home/rails
+
