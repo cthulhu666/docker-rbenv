@@ -1,4 +1,4 @@
-FROM ubuntu:14.04
+FROM debian:jessie
 MAINTAINER jakub.gluszecki@gmail.com
 
 RUN apt-get update && \
