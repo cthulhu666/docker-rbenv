@@ -7,9 +7,9 @@ RUN apt-get update && \
 ADD bin/ /usr/sbin/
 RUN chmod 755 /usr/sbin/install-rbenv.sh
 
-RUN useradd -m -d /home/rails -p rails rails && adduser rails sudo && chsh -s /bin/bash rails
+RUN useradd -m -d /home/ruby -p ruby ruby && adduser ruby sudo && chsh -s /bin/bash ruby
 
 RUN install-rbenv.sh
 
-USER rails
-ENV HOME /home/rails
+USER ruby
+ENV HOME /home/ruby

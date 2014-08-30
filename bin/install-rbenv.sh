@@ -2,11 +2,11 @@
 
 set -eu
 
-su - rails <<'EOF'
-git clone https://github.com/sstephenson/rbenv.git /home/rails/.rbenv
-echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> /home/rails/.bashrc
-echo 'eval "$(rbenv init -)"' >> /home/rails/.bashrc
-git clone https://github.com/sstephenson/ruby-build.git /home/rails/.rbenv/plugins/ruby-build
+su - ruby <<'EOF'
+git clone https://github.com/sstephenson/rbenv.git /home/ruby/.rbenv
+echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> /home/ruby/.bashrc
+echo 'eval "$(rbenv init -)"' >> /home/ruby/.bashrc
+git clone https://github.com/sstephenson/ruby-build.git /home/ruby/.rbenv/plugins/ruby-build
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 rbenv install 2.1.2
