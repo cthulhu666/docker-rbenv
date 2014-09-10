@@ -2,7 +2,8 @@ FROM debian:jessie
 MAINTAINER jakub.gluszecki@gmail.com
 
 RUN apt-get update && \
-    apt-get install -y sudo build-essential libssl-dev libreadline6-dev curl git-core
+    apt-get install -y sudo build-essential libssl-dev libreadline6-dev curl git-core && \
+    apt-get clean
 
 ADD bin/ /usr/sbin/
 RUN chmod 755 /usr/sbin/install-rbenv.sh && \
