@@ -16,9 +16,7 @@ using as base image example
 Create Dockerfile
 
     FROM cthulhu666/docker-rbenv
-    USER root # switch to root for apt-get
-    RUN apt-get update && apt-get install -y libmysqlclient-dev
-    USER ruby # switch back to ruby
+    RUN sudo apt-get update && apt-get install -y libmysqlclient-dev # install extra packages
     ADD . /app
     WORKDIR /app
     RUN bundle install
