@@ -1,14 +1,14 @@
 docker-rbenv
 ============
 
-__Docker image with rbenv and ruby 2.1.5 installed on non-root account__
+__Docker image with rbenv and ruby 2.2.0 installed on non-root account__
 
 basic usage
 -----
 
     docker run -i -t cthulhu666/docker-rbenv
     $ ruby -v
-    ruby 2.1.5p273 (2014-11-13 revision 48405) [x86_64-linux]
+    ruby 2.2.0p0 (2014-12-25 revision 49005) [x86_64-linux]
      
 using as base image example
 ---------------------------
