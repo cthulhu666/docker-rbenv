@@ -9,8 +9,8 @@ echo 'eval "$(rbenv init -)"' >> /home/ruby/.bashrc
 git clone https://github.com/sstephenson/ruby-build.git /home/ruby/.rbenv/plugins/ruby-build
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
-rbenv install 2.2.0
-rbenv global 2.2.0
+rbenv install 2.2.3
+rbenv global 2.2.3
 gem install bundler --no-ri --no-rdoc
 rbenv rehash
 EOF
